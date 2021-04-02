@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CL">
+      <UniqueIdentifier>{7789d323-c959-469b-addc-91336f3201fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GCNASM">
+      <UniqueIdentifier>{181c0a82-12c6-4d82-8e7f-51fe2a1cee17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RandomX_OpenCL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opencl_helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="miner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opencl_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="miner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CL\randomx_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CL\randomx_constants_jit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CL\aes.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+    <None Include="CL\blake2b.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+    <None Include="CL\blake2b_double_block.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+    <None Include="CL\fillAes1Rx4.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+    <None Include="CL\randomx_init.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+    <None Include="CL\randomx_run.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+    <None Include="CL\randomx_vm.cl">
+      <Filter>Source Files\CL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GCNASM\randomx_run_gfx803.asm">
+      <Filter>Source Files\GCNASM</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GCNASM\randomx_run_gfx900.asm">
+      <Filter>Source Files\GCNASM</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GCNASM\randomx_run_gfx1010.asm">
+      <Filter>Source Files\GCNASM</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
